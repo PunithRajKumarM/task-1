@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+}
+body {
+  background-color: black;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  background-color: white;
+  border: 2px solid dodgerblue;
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+}
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+section {
+  scroll-behavior: smooth;
+  padding: 1rem 15px;
+  width: 350px;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: rgba(255, 248, 220, 0.1);
+}
+section::-webkit-scrollbar {
+  display: none;
+}
+.more {
+  padding: 15px 0;
+}
+.more-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border: 1.5px solid rgba(128, 128, 128, 50%);
+  border-bottom: none;
+  border-radius: 2px 2px 0 0;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(128, 128, 128, 100%);
+}
+
+.more-body {
+  border: 1.5px solid rgba(128, 128, 128, 50%);
+  padding: 15px 10px;
+  border-radius: 0 0 2px 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.more-body span {
+  margin-bottom: -12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 100%);
+}
+.more-body button {
+  justify-self: self-start;
+  align-self: self-start;
+  width: 55%;
+  border-color: dodgerblue;
+  color: dodgerblue;
+  border-radius: 2px;
+  padding: 5px;
+  background-color: rgba(255, 248, 220, 0.1);
+  cursor: pointer;
+}
+.attribute {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.attribute-row-1,
+.attribute-row-2 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.attribute-row-1 input:nth-child(1),
+.attribute-row-2 input:nth-child(1) {
+  width: 22%;
+}
+.attribute-row-1 input:nth-child(2),
+.attribute-row-2 input:nth-child(2) {
+  width: 27%;
+}
+.attribute-row-1 input:nth-child(3),
+.attribute-row-2 input:nth-child(3) {
+  width: 17%;
+}
+.attribute-row-1 button,
+.attribute-row-2 button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  padding: 2px 5px;
+  color: red;
+  border-color: red;
+  background-color: white;
+  border-radius: 2px;
+}
+footer {
+  height: 50px;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: end;
+  left: 0;
+  padding: 0 20px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+footer button {
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+footer button:nth-child(1) {
+  color: rgba(0, 0, 0, 0.25);
+  background-color: white;
+  border: 1.5px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+footer button:nth-child(2) {
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  border: 1px dodgerblue;
+}
+input {
+  width: 10%;
+}
+input::placeholder {
+  font-size: 10px;
+}
+.generic-wbs {
+  display: flex;
+  flex-direction: column;
+}
+.generic-wbs > div {
+  font-weight: 600;
+  color: rgba(128, 128, 128, 100%);
+  font-size: 11px;
+}
+.generic-wbs input {
+  margin-top: 8px;
+  width: 50%;
+}
+.row-1 {
+  margin-top: 10px;
+  display: flex;
+  /* justify-content: space-between; */
+  width: 100%;
+  align-items: center;
+  gap: 10px 10px;
+  /* padding: 0 10px; */
+}
+.row-2,
+.row-3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  /* padding: 0 10px; */
+  flex-direction: column;
+}
+.row-1,
+.row-2,
+.row-3 {
+  padding-bottom: 10px;
+}
+.col {
+  width: 50%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.col,
+.row-2,
+.row-3 {
+  gap: 10px 10px;
+}
+.col-2 input,
+.row-2 input,
+.row-3 input {
+  width: 100%;
+}
+input,
+select {
+  border: none;
+  outline: 1.5px solid rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.25);
+  padding: 2px 5px;
+  border-radius: 2px;
+  background-color: white;
+  color: gray;
+}
+select {
+  cursor: pointer;
+}
